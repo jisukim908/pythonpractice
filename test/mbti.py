@@ -3,12 +3,12 @@ def you(name, mbti) :
     b= (mbti.strip()).upper()
     print(f'{a}의 mbti는 {b}이다.')
 
-    #if b in 'E':
+    #if b[:1] == 'E':
     #    print(f'{a}님은 지금 신나게 수다떨면서 놀고 싶다. 혼자 있기 싫다.')
     #else:
     #    print(f'{a}님은 지금 집에 가고 싶다. 넷플릭스를 보며 혼자만의 시간을 갖고 싶다.')
 
-    result = ('지금 신나게 수다 떨면서 놀고 싶다. 혼자 있기 싫다.' if b in 'E'
+    result = ('지금 신나게 수다 떨면서 놀고 싶다. 혼자 있기 싫다.' if b[:1] == 'E'
               else '지금 집에 가고 싶다. 넷플릭스를 보며 혼자만의 시간을 갖고 싶다.')
     print(f'{a}님은 {result}')
 
