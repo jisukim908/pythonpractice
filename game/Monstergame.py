@@ -49,6 +49,7 @@ time.sleep(2)
 print("물몬스터(w)는 공격데미지가 상대적으로 높습니다. 불몬스터(f)는 치유력 회복이 느립니다.")
 time.sleep(2)
 choice = input("당신의 선택은? w 또는 f 중 하나를 써주세요.").strip()
+print("당신의 몬스터가 공격을 시작합니다.")
 time.sleep(2)
 if choice == "w":
     evil = EvilMonster(hp=100)
